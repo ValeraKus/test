@@ -1,0 +1,113 @@
+Using GATK jar /Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx1024M -jar /Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar GenomicsDBImport --variant ../data/pon/CPCT12345678R_HJJLGCCXX_S1_L001.vcf --variant ../data/pon/CPCT12345679R_HJJLGCCXX_S1_L001.vcf --variant ../data/pon/CPCT12345680R_HJJLGCCXX_S1_L001.vcf --intervals ../resources/chip.genes.bed --tmp-dir /var/folders/6q/pgqvpyvd44b65lht2ypblldr0000gq/T/tmp69_l52qq --genomicsdb-workspace-path ../data/pon/db
+13:22:20.527 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+13:22:20.961 INFO  GenomicsDBImport - ------------------------------------------------------------
+13:22:20.962 INFO  GenomicsDBImport - The Genome Analysis Toolkit (GATK) v4.3.0.0
+13:22:20.962 INFO  GenomicsDBImport - For support and documentation go to https://software.broadinstitute.org/gatk/
+13:22:20.963 INFO  GenomicsDBImport - Executing as vtimonin@SV-66M-004 on Mac OS X v10.16 x86_64
+13:22:20.963 INFO  GenomicsDBImport - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_152-release-1056-b12
+13:22:20.963 INFO  GenomicsDBImport - Start Date/Time: January 3, 2023 1:22:20 PM CET
+13:22:20.963 INFO  GenomicsDBImport - ------------------------------------------------------------
+13:22:20.963 INFO  GenomicsDBImport - ------------------------------------------------------------
+13:22:20.965 INFO  GenomicsDBImport - HTSJDK Version: 3.0.1
+13:22:20.965 INFO  GenomicsDBImport - Picard Version: 2.27.5
+13:22:20.965 INFO  GenomicsDBImport - Built for Spark Version: 2.4.5
+13:22:20.965 INFO  GenomicsDBImport - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+13:22:20.965 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+13:22:20.965 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+13:22:20.965 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+13:22:20.966 INFO  GenomicsDBImport - Deflater: IntelDeflater
+13:22:20.966 INFO  GenomicsDBImport - Inflater: IntelInflater
+13:22:20.966 INFO  GenomicsDBImport - GCS max retries/reopens: 20
+13:22:20.966 INFO  GenomicsDBImport - Requester pays: disabled
+13:22:20.966 INFO  GenomicsDBImport - Initializing engine
+13:22:21.595 INFO  FeatureManager - Using codec BEDCodec to read file file:///Users/vtimonin/Desktop/Work/test/workflow/../resources/chip.genes.bed
+13:22:21.603 INFO  IntervalArgumentCollection - Processing 8823018 bp from intervals
+13:22:21.607 INFO  GenomicsDBImport - Done initializing engine
+13:22:22.100 INFO  GenomicsDBLibLoader - GenomicsDB native library version : 1.4.3-SNAPSHOT-6069e4a2
+13:22:22.101 INFO  GenomicsDBImport - Vid Map JSON file will be written to /Users/vtimonin/Desktop/Work/test/workflow/../data/pon/db/vidmap.json
+13:22:22.101 INFO  GenomicsDBImport - Callset Map JSON file will be written to /Users/vtimonin/Desktop/Work/test/workflow/../data/pon/db/callset.json
+13:22:22.101 INFO  GenomicsDBImport - Complete VCF Header will be written to /Users/vtimonin/Desktop/Work/test/workflow/../data/pon/db/vcfheader.vcf
+13:22:22.102 INFO  GenomicsDBImport - Importing to workspace - /Users/vtimonin/Desktop/Work/test/workflow/../data/pon/db
+13:22:22.340 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:22.519 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:22.652 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:22.790 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:22.918 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:23.027 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:23.147 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:23.265 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:23.392 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:23.488 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:23.584 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:23.685 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:23.777 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:23.879 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:23.966 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:24.058 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:24.191 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:24.266 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:24.366 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:24.437 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:24.505 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:24.571 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:24.636 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:24.702 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:24.767 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:24.833 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:24.903 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:24.979 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:25.058 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:25.129 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:25.214 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:25.282 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:25.348 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:25.414 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:25.483 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:25.548 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:25.619 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:25.685 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:25.756 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:25.839 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:25.911 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:25.980 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:26.049 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:26.136 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:26.203 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:26.282 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:26.355 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:26.428 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:26.500 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:26.588 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:26.650 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:26.719 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:26.816 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:26.904 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:26.987 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.053 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.115 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.177 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.244 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.313 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.376 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.439 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.501 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.562 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.626 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.695 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.767 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.830 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.896 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:27.964 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:28.033 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:28.095 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:28.158 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:28.221 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:22:28.278 INFO  GenomicsDBImport - Done importing batch 1/1
+13:22:28.279 INFO  GenomicsDBImport - Import completed!
+13:22:28.279 INFO  GenomicsDBImport - Shutting down engine
+[January 3, 2023 1:22:28 PM CET] org.broadinstitute.hellbender.tools.genomicsdb.GenomicsDBImport done. Elapsed time: 0.13 minutes.
+Runtime.totalMemory()=416284672
+Tool returned:
+true

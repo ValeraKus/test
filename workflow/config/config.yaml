@@ -1,0 +1,24 @@
+ref:
+  species: homo_sapiens
+  build: GRCh38
+  release: 98
+
+
+samples:
+  - CPCT12345678R_HJJLGCCXX_S1_L001
+  - CPCT12345679R_HJJLGCCXX_S1_L001
+  - CPCT12345680R_HJJLGCCXX_S1_L001
+
+PON_samples:
+  - CPCT12345678R_HJJLGCCXX_S1_L001
+  - CPCT12345679R_HJJLGCCXX_S1_L001
+  - CPCT12345680R_HJJLGCCXX_S1_L001
+
+ref_genome: ../resources/GCA_000001405.15_GRCh38_no_alt_analysis_set.fa.gz
+ref_dict: ../resources/GCA_000001405.15_GRCh38_no_alt_analysis_set.dict
+
+threads: 4
+
+intervals: ../resources/chip.genes.bed
+
+known_variation: ../resources/00-common_all.vcf.gz #source with known variation for BaseRecalibrator

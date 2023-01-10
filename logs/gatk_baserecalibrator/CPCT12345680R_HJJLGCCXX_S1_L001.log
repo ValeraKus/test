@@ -1,0 +1,56 @@
+Using GATK jar /Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx1024M -jar /Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar BaseRecalibrator --input ../interim/CPCT12345680R_HJJLGCCXX_S1_L001.dedup.bam --reference ../resources/GCA_000001405.15_GRCh38_no_alt_analysis_set.fa.gz --known-sites ../resources/00-common_all.vcf.gz --tmp-dir /var/folders/6q/pgqvpyvd44b65lht2ypblldr0000gq/T/tmp1jx4lv25 --output ../interim/CPCT12345680R_HJJLGCCXX_S1_L001.grp
+11:53:07.377 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+11:53:08.584 INFO  BaseRecalibrator - ------------------------------------------------------------
+11:53:08.584 INFO  BaseRecalibrator - The Genome Analysis Toolkit (GATK) v4.3.0.0
+11:53:08.585 INFO  BaseRecalibrator - For support and documentation go to https://software.broadinstitute.org/gatk/
+11:53:08.585 INFO  BaseRecalibrator - Executing as vtimonin@SV-66M-004 on Mac OS X v10.16 x86_64
+11:53:08.585 INFO  BaseRecalibrator - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_152-release-1056-b12
+11:53:08.585 INFO  BaseRecalibrator - Start Date/Time: January 3, 2023 11:53:07 AM CET
+11:53:08.586 INFO  BaseRecalibrator - ------------------------------------------------------------
+11:53:08.586 INFO  BaseRecalibrator - ------------------------------------------------------------
+11:53:08.586 INFO  BaseRecalibrator - HTSJDK Version: 3.0.1
+11:53:08.586 INFO  BaseRecalibrator - Picard Version: 2.27.5
+11:53:08.587 INFO  BaseRecalibrator - Built for Spark Version: 2.4.5
+11:53:08.587 INFO  BaseRecalibrator - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+11:53:08.587 INFO  BaseRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+11:53:08.587 INFO  BaseRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+11:53:08.587 INFO  BaseRecalibrator - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+11:53:08.587 INFO  BaseRecalibrator - Deflater: IntelDeflater
+11:53:08.587 INFO  BaseRecalibrator - Inflater: IntelInflater
+11:53:08.587 INFO  BaseRecalibrator - GCS max retries/reopens: 20
+11:53:08.587 INFO  BaseRecalibrator - Requester pays: disabled
+11:53:08.587 INFO  BaseRecalibrator - Initializing engine
+11:53:09.460 INFO  FeatureManager - Using codec VCFCodec to read file file:///Users/vtimonin/Desktop/Work/test/workflow/../resources/00-common_all.vcf.gz
+11:53:09.664 WARN  IndexUtils - Feature file "file:///Users/vtimonin/Desktop/Work/test/workflow/../resources/00-common_all.vcf.gz" appears to contain no sequence dictionary. Attempting to retrieve a sequence dictionary from the associated index file
+11:53:09.933 WARN  IntelInflater - Zero Bytes Written : 0
+11:53:09.934 WARN  IndexUtils - Index file /Users/vtimonin/Desktop/Work/test/workflow/../resources/00-common_all.vcf.gz.tbi is out of date (index older than input file). Use IndexFeatureFile to make a new index.
+11:53:09.959 INFO  BaseRecalibrator - Done initializing engine
+11:53:09.967 INFO  BaseRecalibrationEngine - The covariates being used here: 
+11:53:09.968 INFO  BaseRecalibrationEngine - 	ReadGroupCovariate
+11:53:09.969 INFO  BaseRecalibrationEngine - 	QualityScoreCovariate
+11:53:09.969 INFO  BaseRecalibrationEngine - 	ContextCovariate
+11:53:09.970 INFO  BaseRecalibrationEngine - 	CycleCovariate
+11:53:10.018 INFO  ProgressMeter - Starting traversal
+11:53:10.018 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
+11:53:14.345 WARN  IntelInflater - Zero Bytes Written : 0
+11:53:14.346 INFO  BaseRecalibrator - 83 read(s) filtered by: MappingQualityNotZeroReadFilter 
+0 read(s) filtered by: MappingQualityAvailableReadFilter 
+0 read(s) filtered by: MappedReadFilter 
+0 read(s) filtered by: NotSecondaryAlignmentReadFilter 
+1139 read(s) filtered by: NotDuplicateReadFilter 
+0 read(s) filtered by: PassesVendorQualityCheckReadFilter 
+0 read(s) filtered by: WellformedReadFilter 
+1222 total reads filtered
+11:53:14.347 INFO  ProgressMeter -       chr22:23834104              0.1                 16698         231541.5
+11:53:14.347 INFO  ProgressMeter - Traversal complete. Processed 16698 total reads in 0.1 minutes.
+11:53:14.408 INFO  BaseRecalibrator - Calculating quantized quality scores...
+11:53:14.425 INFO  BaseRecalibrator - Writing recalibration report...
+11:53:15.191 INFO  BaseRecalibrator - ...done!
+11:53:15.192 INFO  BaseRecalibrator - BaseRecalibrator was able to recalibrate 16698 reads
+11:53:15.192 INFO  BaseRecalibrator - Shutting down engine
+[January 3, 2023 11:53:15 AM CET] org.broadinstitute.hellbender.tools.walkers.bqsr.BaseRecalibrator done. Elapsed time: 0.13 minutes.
+Runtime.totalMemory()=399507456
+Tool returned:
+SUCCESS

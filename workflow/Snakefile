@@ -1,0 +1,5 @@
+configfile: 'config/config.yaml'
+
+include: 'rules/alignment.smk'
+include: 'rules/create_pon.smk'
+include: 'rules/mutect2.smk'

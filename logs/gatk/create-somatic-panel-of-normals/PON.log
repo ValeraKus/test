@@ -1,0 +1,65 @@
+Using GATK jar /Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar CreateSomaticPanelOfNormals -R ../resources/GCA_000001405.15_GRCh38_no_alt_analysis_set.fa.gz -V gendb://../data/pon/db --output ../data/pon/pon.vcf.gz
+13:22:33.458 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+13:22:33.740 INFO  CreateSomaticPanelOfNormals - ------------------------------------------------------------
+13:22:33.740 INFO  CreateSomaticPanelOfNormals - The Genome Analysis Toolkit (GATK) v4.3.0.0
+13:22:33.741 INFO  CreateSomaticPanelOfNormals - For support and documentation go to https://software.broadinstitute.org/gatk/
+13:22:33.741 INFO  CreateSomaticPanelOfNormals - Executing as vtimonin@SV-66M-004 on Mac OS X v10.16 x86_64
+13:22:33.741 INFO  CreateSomaticPanelOfNormals - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_152-release-1056-b12
+13:22:33.742 INFO  CreateSomaticPanelOfNormals - Start Date/Time: January 3, 2023 1:22:33 PM CET
+13:22:33.742 INFO  CreateSomaticPanelOfNormals - ------------------------------------------------------------
+13:22:33.742 INFO  CreateSomaticPanelOfNormals - ------------------------------------------------------------
+13:22:33.743 INFO  CreateSomaticPanelOfNormals - HTSJDK Version: 3.0.1
+13:22:33.743 INFO  CreateSomaticPanelOfNormals - Picard Version: 2.27.5
+13:22:33.743 INFO  CreateSomaticPanelOfNormals - Built for Spark Version: 2.4.5
+13:22:33.743 INFO  CreateSomaticPanelOfNormals - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+13:22:33.743 INFO  CreateSomaticPanelOfNormals - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+13:22:33.743 INFO  CreateSomaticPanelOfNormals - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+13:22:33.744 INFO  CreateSomaticPanelOfNormals - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+13:22:33.744 INFO  CreateSomaticPanelOfNormals - Deflater: IntelDeflater
+13:22:33.744 INFO  CreateSomaticPanelOfNormals - Inflater: IntelInflater
+13:22:33.744 INFO  CreateSomaticPanelOfNormals - GCS max retries/reopens: 20
+13:22:33.744 INFO  CreateSomaticPanelOfNormals - Requester pays: disabled
+13:22:33.744 WARN  CreateSomaticPanelOfNormals - 
+
+[1m[31m   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+   Warning: CreateSomaticPanelOfNormals is a BETA tool and is not yet ready for use in production
+
+   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!![0m
+
+
+13:22:33.744 INFO  CreateSomaticPanelOfNormals - Initializing engine
+13:22:34.635 INFO  GenomicsDBLibLoader - GenomicsDB native library version : 1.4.3-SNAPSHOT-6069e4a2
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field AS_UNIQ_ALT_READ_COUNT  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field CONTQ  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field ECNT  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field GERMQ  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field MBQ  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field MFRL  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field MMQ  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field MPOS  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field NALOD  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field NCount  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field NLOD  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field OCM  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field PON  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field POPAF  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field ROQ  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field RPA  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field RU  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field SEQQ  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field STR  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field STRANDQ  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field STRQ  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.692 info  NativeGenomicsDB - pid=11875 tid=211658 No valid combination operation found for INFO field TLOD  - the field will NOT be part of INFO fields in the generated VCF records
+13:22:34.742 INFO  CreateSomaticPanelOfNormals - Done initializing engine
+13:22:34.766 INFO  ProgressMeter - Starting traversal
+13:22:34.766 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+GENOMICSDB_TIMER,GenomicsDB iterator next() timer,Wall-clock time(s),0.011380224999999996,Cpu time(s),0.011066999999999997
+13:23:05.925 INFO  ProgressMeter -             unmapped              0.5                    44             84.7
+13:23:05.925 INFO  ProgressMeter - Traversal complete. Processed 44 total variants in 0.5 minutes.
+13:23:05.940 INFO  CreateSomaticPanelOfNormals - Shutting down engine
+[January 3, 2023 1:23:05 PM CET] org.broadinstitute.hellbender.tools.walkers.mutect.CreateSomaticPanelOfNormals done. Elapsed time: 0.54 minutes.
+Runtime.totalMemory()=368574464

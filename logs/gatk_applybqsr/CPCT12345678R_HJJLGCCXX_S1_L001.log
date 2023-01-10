@@ -1,0 +1,35 @@
+Using GATK jar /Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx1024M -jar /Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar ApplyBQSR --input ../interim/CPCT12345678R_HJJLGCCXX_S1_L001.dedup.bam --bqsr-recal-file ../interim/CPCT12345678R_HJJLGCCXX_S1_L001.grp --reference ../resources/GCA_000001405.15_GRCh38_no_alt_analysis_set.fa.gz --tmp-dir /var/folders/6q/pgqvpyvd44b65lht2ypblldr0000gq/T/tmppascmd0y --output ../data/preprocessed/CPCT12345678R_HJJLGCCXX_S1_L001.bam
+22:38:35.863 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+22:38:36.153 INFO  ApplyBQSR - ------------------------------------------------------------
+22:38:36.153 INFO  ApplyBQSR - The Genome Analysis Toolkit (GATK) v4.3.0.0
+22:38:36.153 INFO  ApplyBQSR - For support and documentation go to https://software.broadinstitute.org/gatk/
+22:38:36.154 INFO  ApplyBQSR - Executing as vtimonin@SV-66M-004 on Mac OS X v10.16 x86_64
+22:38:36.154 INFO  ApplyBQSR - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_152-release-1056-b12
+22:38:36.154 INFO  ApplyBQSR - Start Date/Time: December 26, 2022 10:38:35 PM CET
+22:38:36.154 INFO  ApplyBQSR - ------------------------------------------------------------
+22:38:36.154 INFO  ApplyBQSR - ------------------------------------------------------------
+22:38:36.155 INFO  ApplyBQSR - HTSJDK Version: 3.0.1
+22:38:36.156 INFO  ApplyBQSR - Picard Version: 2.27.5
+22:38:36.156 INFO  ApplyBQSR - Built for Spark Version: 2.4.5
+22:38:36.156 INFO  ApplyBQSR - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+22:38:36.156 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+22:38:36.156 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+22:38:36.156 INFO  ApplyBQSR - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+22:38:36.156 INFO  ApplyBQSR - Deflater: IntelDeflater
+22:38:36.156 INFO  ApplyBQSR - Inflater: IntelInflater
+22:38:36.156 INFO  ApplyBQSR - GCS max retries/reopens: 20
+22:38:36.156 INFO  ApplyBQSR - Requester pays: disabled
+22:38:36.157 INFO  ApplyBQSR - Initializing engine
+22:38:36.751 INFO  ApplyBQSR - Done initializing engine
+22:38:36.779 INFO  ProgressMeter - Starting traversal
+22:38:36.780 INFO  ProgressMeter -        Current Locus  Elapsed Minutes       Reads Processed     Reads/Minute
+22:38:38.480 WARN  IntelInflater - Zero Bytes Written : 0
+22:38:38.482 INFO  ApplyBQSR - 0 read(s) filtered by: WellformedReadFilter 
+
+22:38:38.482 INFO  ProgressMeter -       chr22:23801115              0.0                 17920         631727.4
+22:38:38.483 INFO  ProgressMeter - Traversal complete. Processed 17920 total reads in 0.0 minutes.
+22:38:38.561 INFO  ApplyBQSR - Shutting down engine
+[December 26, 2022 10:38:38 PM CET] org.broadinstitute.hellbender.tools.walkers.bqsr.ApplyBQSR done. Elapsed time: 0.05 minutes.
+Runtime.totalMemory()=286785536

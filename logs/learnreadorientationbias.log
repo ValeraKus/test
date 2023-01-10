@@ -1,0 +1,66 @@
+Using GATK jar /Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -Xmx1024M -jar /Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar LearnReadOrientationModel --input ../interim/f1r2.tar.gz --tmp-dir /var/folders/6q/pgqvpyvd44b65lht2ypblldr0000gq/T/tmp0j13iyc7 --output ../interim/read-orientation-model.tar.gz
+10:46:51.915 INFO  NativeLibraryLoader - Loading libgkl_compression.dylib from jar:file:/Users/vtimonin/opt/anaconda3/envs/snakemake/share/gatk4-4.3.0.0-0/gatk-package-4.3.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.dylib
+10:46:54.099 INFO  LearnReadOrientationModel - ------------------------------------------------------------
+10:46:54.100 INFO  LearnReadOrientationModel - The Genome Analysis Toolkit (GATK) v4.3.0.0
+10:46:54.100 INFO  LearnReadOrientationModel - For support and documentation go to https://software.broadinstitute.org/gatk/
+10:46:54.100 INFO  LearnReadOrientationModel - Executing as vtimonin@SV-66M-004 on Mac OS X v10.16 x86_64
+10:46:54.100 INFO  LearnReadOrientationModel - Java runtime: OpenJDK 64-Bit Server VM v1.8.0_152-release-1056-b12
+10:46:54.101 INFO  LearnReadOrientationModel - Start Date/Time: January 4, 2023 10:46:51 AM CET
+10:46:54.101 INFO  LearnReadOrientationModel - ------------------------------------------------------------
+10:46:54.101 INFO  LearnReadOrientationModel - ------------------------------------------------------------
+10:46:54.101 INFO  LearnReadOrientationModel - HTSJDK Version: 3.0.1
+10:46:54.101 INFO  LearnReadOrientationModel - Picard Version: 2.27.5
+10:46:54.101 INFO  LearnReadOrientationModel - Built for Spark Version: 2.4.5
+10:46:54.101 INFO  LearnReadOrientationModel - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+10:46:54.102 INFO  LearnReadOrientationModel - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+10:46:54.102 INFO  LearnReadOrientationModel - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+10:46:54.102 INFO  LearnReadOrientationModel - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+10:46:54.102 INFO  LearnReadOrientationModel - Deflater: IntelDeflater
+10:46:54.102 INFO  LearnReadOrientationModel - Inflater: IntelInflater
+10:46:54.102 INFO  LearnReadOrientationModel - GCS max retries/reopens: 20
+10:46:54.102 INFO  LearnReadOrientationModel - Requester pays: disabled
+10:46:54.102 INFO  LearnReadOrientationModel - Initializing engine
+10:46:54.102 INFO  LearnReadOrientationModel - Done initializing engine
+10:46:54.108 INFO  IOUtils - Extracting data from archive: file:///Users/vtimonin/Desktop/Work/test/workflow/../interim/f1r2.tar.gz
+10:46:54.122 INFO  IOUtils - Extracting file: ./CPCT12345680R_HJJLGCCXX_S1_L001.ref_histogram
+10:46:54.127 INFO  IOUtils - Extracting file: ./CPCT12345680R_HJJLGCCXX_S1_L001.alt_histogram
+10:46:54.130 INFO  IOUtils - Extracting file: ./CPCT12345680R_HJJLGCCXX_S1_L001.alt_table
+10:46:55.214 INFO  LearnReadOrientationModel - Context AAC: with 832 ref and 5 alt examples, EM converged in 11 steps
+10:46:55.723 INFO  LearnReadOrientationModel - Context AAG: with 1098 ref and 6 alt examples, EM converged in 9 steps
+10:46:55.949 INFO  LearnReadOrientationModel - Context AAT: with 1247 ref and 7 alt examples, EM converged in 6 steps
+10:46:56.167 INFO  LearnReadOrientationModel - Context ACA: with 1058 ref and 7 alt examples, EM converged in 7 steps
+10:46:56.169 INFO  LearnReadOrientationModel - Skipping the reference context ACC as we didn't find either the ref or alt table for the context
+10:46:56.171 INFO  LearnReadOrientationModel - Skipping the reference context ACG as we didn't find either the ref or alt table for the context
+10:46:56.173 INFO  LearnReadOrientationModel - Skipping the reference context ACT as we didn't find either the ref or alt table for the context
+10:46:56.174 INFO  LearnReadOrientationModel - Skipping the reference context AGA as we didn't find either the ref or alt table for the context
+10:46:56.175 INFO  LearnReadOrientationModel - Skipping the reference context AGC as we didn't find either the ref or alt table for the context
+10:46:56.176 INFO  LearnReadOrientationModel - Skipping the reference context AGG as we didn't find either the ref or alt table for the context
+10:46:56.378 INFO  LearnReadOrientationModel - Context ATA: with 1011 ref and 8 alt examples, EM converged in 7 steps
+10:46:56.380 INFO  LearnReadOrientationModel - Skipping the reference context ATC as we didn't find either the ref or alt table for the context
+10:46:56.603 INFO  LearnReadOrientationModel - Context ATG: with 1020 ref and 5 alt examples, EM converged in 7 steps
+10:46:56.604 INFO  LearnReadOrientationModel - Skipping the reference context CAA as we didn't find either the ref or alt table for the context
+10:46:56.832 INFO  LearnReadOrientationModel - Context CAC: with 792 ref and 15 alt examples, EM converged in 8 steps
+10:46:57.096 INFO  LearnReadOrientationModel - Context CAG: with 1182 ref and 9 alt examples, EM converged in 9 steps
+10:46:57.297 INFO  LearnReadOrientationModel - Context CCA: with 1064 ref and 6 alt examples, EM converged in 7 steps
+10:46:57.637 INFO  LearnReadOrientationModel - Context CCC: with 804 ref and 4 alt examples, EM converged in 10 steps
+10:46:57.639 INFO  LearnReadOrientationModel - Skipping the reference context CCG as we didn't find either the ref or alt table for the context
+10:46:58.007 INFO  LearnReadOrientationModel - Context CGA: with 165 ref and 4 alt examples, EM converged in 13 steps
+10:46:58.404 INFO  LearnReadOrientationModel - Context CGC: with 188 ref and 3 alt examples, EM converged in 14 steps
+10:46:58.405 INFO  LearnReadOrientationModel - Skipping the reference context CTA as we didn't find either the ref or alt table for the context
+10:46:58.406 INFO  LearnReadOrientationModel - Skipping the reference context CTC as we didn't find either the ref or alt table for the context
+10:46:58.407 INFO  LearnReadOrientationModel - Skipping the reference context GAA as we didn't find either the ref or alt table for the context
+10:46:58.408 INFO  LearnReadOrientationModel - Skipping the reference context GAC as we didn't find either the ref or alt table for the context
+10:46:58.621 INFO  LearnReadOrientationModel - Context GCA: with 819 ref and 7 alt examples, EM converged in 7 steps
+10:46:58.623 INFO  LearnReadOrientationModel - Skipping the reference context GCC as we didn't find either the ref or alt table for the context
+10:46:58.624 INFO  LearnReadOrientationModel - Skipping the reference context GGA as we didn't find either the ref or alt table for the context
+10:46:58.972 INFO  LearnReadOrientationModel - Context GTA: with 631 ref and 2 alt examples, EM converged in 12 steps
+10:46:59.353 INFO  LearnReadOrientationModel - Context TAA: with 1080 ref and 7 alt examples, EM converged in 13 steps
+10:46:59.354 INFO  LearnReadOrientationModel - Skipping the reference context TCA as we didn't find either the ref or alt table for the context
+10:46:59.355 INFO  LearnReadOrientationModel - Skipping the reference context AAA as we didn't find either the ref or alt table for the context
+10:46:59.370 INFO  LearnReadOrientationModel - Shutting down engine
+[January 4, 2023 10:46:59 AM CET] org.broadinstitute.hellbender.tools.walkers.readorientation.LearnReadOrientationModel done. Elapsed time: 0.12 minutes.
+Runtime.totalMemory()=418381824
+Tool returned:
+SUCCESS
